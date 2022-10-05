@@ -1,0 +1,26 @@
+banner_links:
+  default: >-
+    [{"icon":"info-circle","text":"about this site","url":"/faq"},
+    {"icon":"users","text":"meet our staff","url":"/about"},
+    {"icon":"star","text":"your preferences","url":"/my/preferences"}]
+  json_schema: '{
+    "type": "array",
+    "format": "table",
+    "uniqueItems": true,
+    "items": {
+    "type": "object",
+    "properties": {
+    "icon": {
+    "type": "string",
+    "minLength": 1
+    },
+    "text": {
+    "type": "string",
+    "minLength": 1
+    },
+    "url": {
+    "type": "string"
+    }
+    },
+    "additionalProperties": false
+    }}'
